@@ -1,1 +1,1 @@
-# Task_1
+# This program allows you to create your own salad. You have potatoes, broccoli, carrots and cucumber. After launching the program, you will be asked to enter the number of grams of a particular product. After entering the weight, you will be asked to enter the method of preparation of a particular product. After all this, you will see a list of ingredients of your salad sorted by weight. Then you will be asked to enter limits on the number of calories of this list to see how much of which product has a calorie content in your salad.

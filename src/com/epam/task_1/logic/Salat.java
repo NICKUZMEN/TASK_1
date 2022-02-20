@@ -17,6 +17,9 @@ public class Salat {
         this.ingredients.add(vegetable);
     }
 
+    /***
+     * go through the list and output the name and weight parameter
+     */
     public void showRecipe() {
         if (this.ingredients.isEmpty()) {
             System.out.println("You haven't added any ingredients yet!");
@@ -30,13 +33,20 @@ public class Salat {
         }
     }
 
-
+    /***
+     *Sorting the list of arrays using the comparator
+     * @param comparator compares two objects.
+     */
     public void sortWeight(WeightComparator comparator) {
        Collections.sort(ingredients,comparator);
         System.out.println("Sort products by weight.......");
     }
 
-
+    /***
+     *we go through the list of vegetables counting calories in it.
+     *  Until the list ends, we continue to count calories
+     * @return the sum of all calories in the list of ingredients
+     */
     public int countingCalories() {
         int calories = 0;
         Vegetable vegetable;
@@ -47,6 +57,11 @@ public class Salat {
         return calories;
     }
 
+    /***
+     * creating limits by which we can see which ingredient in the list has the number of calories
+     * @param lowerCalories lower calorie limit
+     * @param upperCalories upper calorie limit
+     */
     public void showIngredientsByCalories(int lowerCalories, int upperCalories) {
 
         if (lowerCalories > upperCalories) {
